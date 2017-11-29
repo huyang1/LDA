@@ -1,6 +1,6 @@
 package huyang.edu.cn.Utils;
 
-import huyang.edu.cn.Vector;
+import huyang.edu.cn.vector.Vector;
 
 import java.util.Comparator;
 

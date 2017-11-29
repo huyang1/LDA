@@ -1,4 +1,4 @@
-package huyang.edu.cn;
+package huyang.edu.cn.vector;
 
 import java.io.*;
 import java.util.ArrayList;

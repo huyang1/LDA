@@ -1,4 +1,4 @@
-package huyang.edu.cn;
+package huyang.edu.cn.vector;
 
 public interface Vector<T> {
 

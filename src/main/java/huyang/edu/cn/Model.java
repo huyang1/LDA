@@ -1,7 +1,11 @@
 package huyang.edu.cn;
 
+import huyang.edu.cn.Utils.MatrixOperations;
 import huyang.edu.cn.Utils.TwordsComparable;
 import huyang.edu.cn.Utils.Util;
+import huyang.edu.cn.vector.Matrix;
+import huyang.edu.cn.vector.Param;
+import huyang.edu.cn.vector.Vector;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -94,6 +98,12 @@ public class Model {
 
     private Map<String, Integer> wordToIndex;
 
+    private Matrix<Double> theraSum;
+
+    private Matrix<Double> phiSum;
+
+    private String outputPath;
+
     /**
      * @param wordToIndex
      * @param matrix M*N
@@ -101,10 +111,27 @@ public class Model {
     public Model(Map<String, Integer> wordToIndex, Matrix matrix) {
         this.K = 8;
         this.alpha = 50f/this.K;
-        this.beta = 0.1f;
+        this.beta = 0.01f;
         this.iterations = 500;
-        this.beginSave = 80;
+        this.beginSave = 490;
         this.saveStepNum = 10;
+        this.wordToIndex = wordToIndex;
+        initModel(wordToIndex, matrix);
+    }
+
+    public Model (Map<String, Integer> wordToIndex, Matrix matrix,
+            String outputPath,
+            int K,
+            int beginSave,
+            int saveNum,
+            int iterations) {
+        this.outputPath = outputPath;
+        this.K = K;
+        this.alpha = 50f/this.K;
+        this.beta = 0.01f;
+        this.iterations = iterations;
+        this.beginSave = beginSave;
+        this.saveStepNum = saveNum;
         this.wordToIndex = wordToIndex;
         initModel(wordToIndex, matrix);
     }
@@ -115,6 +142,8 @@ public class Model {
         this.V = wordToIndex.keySet().size();
         this.theta = new Matrix<Double>(M,K,0d);
         this.phi = new Matrix<Double>(K,V,0d);
+        this.theraSum = new Matrix<Double>(M,K,0d);
+        this.phiSum = new Matrix<Double>(K,V,0d);
         this.m_topic_count = new Matrix<Integer>(M,K,0);
         this.topic_word_count = new Matrix<Integer>(K,V,0);
         this.m_topic_count_sum = new Param<Integer>(M,0);
@@ -142,11 +171,22 @@ public class Model {
         }
     }
 
-    public void trainModel(Matrix matrix,double threshold) throws Exception {
+    public void trainModel(Matrix matrix) throws Exception {
         for(int i = 0; i < iterations; i++) {
             log.info("iterationNum is "+i);
             System.out.println("iterationNum is "+i);
-//            Matrix temp = phi;
+            if(i>=beginSave) {
+                updateEstimatedParameters();
+                //将模型参数累加求均值，使结果更加真实
+                theraSum = MatrixOperations.plus(theraSum,theta);
+                phiSum = MatrixOperations.plus(phiSum, phi);
+            }
+            if(i==beginSave+saveStepNum-1) {
+                theta = MatrixOperations.div(theraSum, saveStepNum);
+                phi = MatrixOperations.div(phiSum, saveStepNum);
+                saveIteratedModel(i+1,outputPath);
+                break;
+            }
 
 //            if(isConvergence(temp,phi,threshold)) {
 //                saveIteratedModel(i+1,"result.txt");
@@ -164,7 +204,8 @@ public class Model {
             }
             if(i==iterations-1) {
                 updateEstimatedParameters();
-                saveIteratedModel(i+1,"result.txt");
+                saveIteratedModel(i+1,outputPath);
+                break;
             }
         }
 
