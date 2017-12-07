@@ -14,12 +14,11 @@ HEAD  毕业设计：LDA算法实现与运用<br>
 ###### （？代表当前迭代次数。）<br>
           
 ### 使用参数：
->>>>>>* -h    help                        print help message.<br>
->>>>>>* -i    inputFile                   train file input path.  default: the project's train.txt<br>
->>>>>>* -o    outputFile                  output Dir path. default: the project's result.txt<br>
->>>>>>* -k    K                            topic number,default: topic default 8<br>
->>>>>>* -b    beginSaveIterations      start save model params iterations<br>
->>>>>>* -s    saveStepNum                save model params num. <br>
->>>>>>* -it   maxIterations               LDA max iterations, <br>
->>>>>>* -mr   runMR                         if use MapReducer.<br>
-
+    -h    help                        print help message.
+    -i    inputFile                   train file input path.  default: the project's train.txt
+	-o    outputFile                  output Dir path. default: the project's result.txt
+	-k    K                            topic number,default: topic default 8
+	-b    beginSaveIterations      start save model params iterations
+	-s    saveStepNum                save model params num. 
+	-it   maxIterations               LDA max iterations.
+	-mr   runMR                         if use MapReducer.
