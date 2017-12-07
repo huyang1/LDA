@@ -1,6 +1,8 @@
 package huyang.edu.cn.Utils;
 
 import huyang.edu.cn.vector.Matrix;
+import huyang.edu.cn.vector.Param;
+import huyang.edu.cn.vector.Vector;
 
 /**
  * 本来这样函数应该写入Vector接口的，由于vecotr是泛型接口不好做加法，故只好单独写一个工具类实现
@@ -31,5 +33,17 @@ public class MatrixOperations {
             }
         }
         return A;
+    }
+
+    public static Vector<Integer> sumByRow(Matrix<Integer> A) {
+        Vector<Integer> vector =new Param<Integer>();
+        for(int i = 0; i < A.getSize(); i++) {
+            int sum = 0;
+            for(int j = 0; j< A.getValue(i).getSize(); j++){
+                sum += A.getValue(i).getValue(j);
+            }
+            vector.add(sum);
+        }
+        return vector;
     }
 }

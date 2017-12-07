@@ -45,6 +45,8 @@ public class AbstractJob {
             argMap.put("saveNum",cmd.getOptionValue("s"));
         } else if (cmd.hasOption("it")) {
             argMap.put("Iterations",cmd.getOptionValue("it"));
+        } else if (cmd.hasOption("mr")) {
+            argMap.put("runMR",cmd.getOptionValue("mr"));
         }
         if (argMap.size()==1 && argMap.containsKey("help")) {
             System.out.printf("%-8s%-25s","  -"+options.getOption("h").getOpt(),options.getOption("h").getLongOpt());
@@ -61,6 +63,8 @@ public class AbstractJob {
             System.out.println(options.getOption("s").getDescription());
             System.out.printf("%-8s%-25s","  -"+options.getOption("it").getOpt(),options.getOption("it").getLongOpt());
             System.out.println(options.getOption("it").getDescription());
+            System.out.printf("%-8s%-25s","  -"+options.getOption("mr").getOpt(),options.getOption("mr").getLongOpt());
+            System.out.println(options.getOption("mr").getDescription());
         }
         return argMap;
     }
