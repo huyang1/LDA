@@ -11,8 +11,8 @@ LDA算法实现与运用
           （？代表当前迭代次数。）
           
 使用参数：
-         -h    help                     print help message
-         -i    inputFile                train file input path.   default: the project's train.txt
+         -h    help                     print help message.<br>
+         -i    inputFile                train file input path.  default: the project's train.txt
          -o    outputFile               output Dir path. default: the project's result.txt
          -k    K                        topic number,default: topic default 8
          -b    beginSaveIterations      start save model params iterations
