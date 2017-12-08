@@ -112,10 +112,11 @@ public class Model {
         this.K = 8;
         this.alpha = 50f/this.K;
         this.beta = 0.01f;
-        this.iterations = 500;
-        this.beginSave = 490;
-        this.saveStepNum = 10;
+        this.iterations = 10;
+        this.beginSave = 9;
+        this.saveStepNum = 1;
         this.wordToIndex = wordToIndex;
+        this.outputPath = "result.txt";
         initModel(wordToIndex, matrix);
     }
 

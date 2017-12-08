@@ -58,7 +58,6 @@ public class InitMapper extends Mapper<twoDimensionIndexWritable, Text, twoDimen
         docToTopic.getValue(m).setValue(initTopic,docToTopic.getValue(m).getValue(initTopic)+1);
         topicToWord.getValue(initTopic).setValue(index,topicToWord.getValue(initTopic).getValue(index)+1);
 
-
     }
 
     @Override

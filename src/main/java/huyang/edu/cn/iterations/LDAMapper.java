@@ -12,12 +12,17 @@ import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import huyang.edu.cn.sequence.Pair;
 import huyang.edu.cn.sequence.SequenceFileIterable;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
 public class LDAMapper extends Mapper<twoDimensionIndexWritable, Text, twoDimensionIndexWritable, Text> {
+
+    private static final Logger log = LoggerFactory.getLogger(LDAMapper.class);
+
     private Map<String, Integer> wordToIndex = new HashMap<String, Integer>();
 
     private Matrix<Integer> docToTopic;
@@ -77,7 +82,6 @@ public class LDAMapper extends Mapper<twoDimensionIndexWritable, Text, twoDimens
 
         docToTopic.getValue(m).setValue(newTopic,docToTopic.getValue(m).getValue(newTopic)+1);
         topicToWord.getValue(newTopic).setValue(index,topicToWord.getValue(newTopic).getValue(index)+1);
-
         key.setMatrixKind(MatrixKind.Corpus);
         key.setTopic(newTopic);
 

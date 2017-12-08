@@ -55,7 +55,6 @@ public class CalParamsReducer extends Reducer<IntWritable, indexToCountWritable,
             sum += temp.getCount();
         }
 
-        Iterator<indexToCountWritable> wordIter = values.iterator();
         for(indexToCountWritable indexToCount : data) {
             int n = indexToCount.getIndex();
             twoDimensionIndexWritable params = new twoDimensionIndexWritable(key.get(), n);

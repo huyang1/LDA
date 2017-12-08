@@ -44,8 +44,9 @@ public class InputReducer extends Reducer<LongWritable, indexToWordWritable, two
                 }
             }
         } else {
-            indexToWordWritable words = values.iterator().next();
-            context.write(new twoDimensionIndexWritable(m, words.getIndex()), new Text(words.getWord()));
+            for(indexToWordWritable words : values) {
+                context.write(new twoDimensionIndexWritable(m, words.getIndex()), new Text(words.getWord()));
+            }
             log.info("m: {}",m);
             m++;
         }

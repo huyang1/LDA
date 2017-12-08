@@ -16,7 +16,7 @@ public class twoDimensionIndexWritable extends Configured implements WritableCom
 
     private int topic=0;
 
-    private double probability=0;
+    private double probability=0.0d;
 
     private String matrixKind="";
 

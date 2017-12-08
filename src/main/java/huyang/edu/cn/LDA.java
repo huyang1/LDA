@@ -93,12 +93,12 @@ public class LDA extends AbstractJob{
         if(argMap.containsKey("inputPath")) {
             inputPath = new Path(argMap.get("inputPath"));
         } else {
-            inputPath = new Path("train.txt");
+            inputPath = new Path("LdaInput");
         }
         if(argMap.containsKey("outputPath")) {
             outputPath = new Path(argMap.get("outputPath"));
         } else {
-            outputPath = new Path("result.txt");
+            outputPath = new Path("LdaOutput");
         }
         if(argMap.containsKey("topic")) {
             K = Integer.parseInt(argMap.get("topic"));
@@ -108,22 +108,22 @@ public class LDA extends AbstractJob{
         if(argMap.containsKey("beginSave")) {
             beginSave = Integer.parseInt(argMap.get("beginSave"));
         } else {
-            beginSave = 9;
+            beginSave = 90;
         }
         if(argMap.containsKey("saveNum")) {
             saveNum = Integer.parseInt(argMap.get("saveNum"));
         } else {
-            saveNum = 1;
+            saveNum = 10;
         }
         if(argMap.containsKey("Iterations")) {
             iterations = Integer.parseInt(argMap.get("Iterations"));
         } else {
-            iterations = 10;
+            iterations = 100;
         }
         if(argMap.containsKey("runMR")) {
             runMR = Boolean.parseBoolean(argMap.get("runMR"));
         } else {
-            runMR = false;
+            runMR = true;
         }
 
         if(!runMR) {
