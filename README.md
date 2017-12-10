@@ -2,7 +2,7 @@ HEAD  毕业设计：LDA算法实现与运用<br>
 ### 1.单机版实现：算法迭代主要是in-memory的方式，适合小数据量。<br>
 ### 2.MR实现：主要中间结果存在HDFS上.适合大数据集。<br>
 #### 1>.
-       第一个MR——————inputFile转化为wordIndexFile和M *N word file.初始化z topic word
+       第一个MR——————inputFile转化为wordIndexFile和M *N word file.
 #### 2>.
        第二个MR-----------在M*N word file 中初始化z，初始化doctopic，topicword文件（存于output/）。
 #### 3>.
