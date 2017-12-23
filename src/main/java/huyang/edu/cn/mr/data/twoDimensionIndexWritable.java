@@ -1,7 +1,6 @@
-package huyang.edu.cn.data;
+package huyang.edu.cn.mr.data;
 
 import org.apache.hadoop.conf.Configured;
-import org.apache.hadoop.io.Writable;
 import org.apache.hadoop.io.WritableComparable;
 
 import java.io.DataInput;

@@ -1,11 +1,11 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.LDA;
+import huyang.edu.cn.Job;
 import huyang.edu.cn.Utils.TwordsComparable;
 import huyang.edu.cn.Utils.Util;
-import huyang.edu.cn.data.MatrixKind;
-import huyang.edu.cn.data.indexToCountWritable;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.mr.data.MatrixKind;
+import huyang.edu.cn.mr.data.indexToCountWritable;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import huyang.edu.cn.vector.Param;
 import huyang.edu.cn.vector.Vector;
 import org.apache.hadoop.conf.Configuration;
@@ -40,7 +40,7 @@ public class CalParamsReducer extends Reducer<IntWritable, indexToCountWritable,
         super.setup(context);
         Configuration conf = context.getConfiguration();
         this.beta = Double.parseDouble(conf.get("params"));
-        ReadIndexFromFile(new Path(conf.get(LDA.indexFile)), conf);
+        ReadIndexFromFile(new Path(conf.get(Job.indexFile)), conf);
         this.phiByRow = new Param<Double>(V,0.0);
     }
 

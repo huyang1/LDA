@@ -1,19 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/indexToCountWritable.java" line="46" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToCountWritable.java" line="46" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d17b483e-a05a-4097-b885-f8f78809a6a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/result.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/Pair.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterable.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterator.java" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/twoDimensionIndexWritable.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/twoDimensionIndexWritable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsReducer.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsReducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/CoreNLP-chinese.properties" afterPath="$PROJECT_DIR$/src/main/resources/CoreNLP-chinese.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/train.txt" afterPath="$PROJECT_DIR$/train.txt" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Job.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/MatrixKind.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/MatrixKind.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/indexToCountWritable.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToCountWritable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/indexToWordWritable.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToWordWritable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/twoDimensionIndexWritable.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/twoDimensionIndexWritable.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/CalParamsMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsReducer.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/CalParamsReducer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitReducer.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitReducer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputReducer.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/LDAMapper.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/CalParamDriver.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/CalParamDriver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InitDriver.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InitDriver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InputDriver.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InputDriver.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/LDADriver.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/LDADriver.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,11 +45,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="InitDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InitDriver.java">
+      <file leaf-file-name="Job.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Job.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="432">
-              <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
+            <state relative-caret-position="373">
+              <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -41,100 +57,60 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LDA.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java">
+      <file leaf-file-name="LDADriver.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/LDADriver.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="269">
-              <caret line="145" column="27" lean-forward="false" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
+            <state relative-caret-position="108">
+              <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LDAModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="444">
+              <caret line="93" column="60" lean-forward="false" selection-start-line="93" selection-start-column="58" selection-end-line="93" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#979#996#0" expanded="true" />
+                <element signature="e#2944#2953#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="InputDriver.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InputDriver.java">
+      <file leaf-file-name="Util.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="317">
-              <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputReducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="344">
-              <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InputMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="307">
-              <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitMapper.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="result.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/result.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="53" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="LDAMapper.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="83" column="104" lean-forward="true" selection-start-line="83" selection-start-column="104" selection-end-line="83" selection-end-column="104" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InitReducer.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitReducer.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+            <state relative-caret-position="603">
+              <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Model.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/Model.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="643">
-              <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
+            <state relative-caret-position="2493">
+              <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#3367#3376#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BTModel.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="501">
+              <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#2875#2884#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -151,12 +127,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Engineering</find>
-      <find>saveIteratedModel</find>
-      <find>matrix</find>
-      <find>RecordReader</find>
-      <find>SequenceOutput</find>
-      <find>start running InputDriver</find>
       <find>twoDimensionIndexWritable</find>
       <find>z</find>
       <find>Util</find>
@@ -166,7 +136,6 @@
       <find>K</find>
       <find>ReadIndexFromFile</find>
       <find>Iterable</find>
-      <find>wordToIndex</find>
       <find>Param</find>
       <find>context.write</find>
       <find>Cluster Iteration</find>
@@ -176,12 +145,22 @@
       <find>outputPath</find>
       <find>topicToWord</find>
       <find>addInputPath</find>
-      <find>phi</find>
       <find>inputPath</find>
       <find>loadDocumentsFromFile</find>
       <find>topic_word_count</find>
       <find>context</find>
+      <find>i</find>
+      <find>V</find>
+      <find>wordToIndex</find>
+      <find>matrix</find>
+      <find>theta</find>
+      <find>alpha</find>
+      <find>topic_word_count_sum</find>
+      <find>phi</find>
     </findStrings>
+    <replaceStrings>
+      <replace>gibbs</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -194,16 +173,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/resources/CoreNLP-chinese.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/CoreNLPSegment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Word.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Matrix.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/TwordsComparable.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils.java" />
-        <option value="$PROJECT_DIR$/test.txt" />
-        <option value="$PROJECT_DIR$/result.txt" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/NLP/CoreNLPSegment.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/TwordsComparable.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Param.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Vector.java" />
@@ -241,10 +211,19 @@
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/twoDimensionIndexWritable.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsReducer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java" />
         <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/CalParamDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InitDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InputDriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/LDADriver.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/Model.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Job.java" />
       </list>
     </option>
   </component>
@@ -267,10 +246,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="325" />
+    <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1382" />
-    <option name="height" value="784" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
@@ -290,8 +269,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="AndroidView" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -302,14 +281,44 @@
             <path>
               <item name="LDA" type="b2602c69:ProjectViewProjectNode" />
               <item name="LDA" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LDA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LDA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LDA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LDA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LDA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LDA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="LDA" type="b2602c69:ProjectViewProjectNode" />
+              <item name="LDA" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="cn" type="462c0819:PsiDirectoryNode" />
+              <item name="NLP" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -318,9 +327,9 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -344,7 +353,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Remote.192.168.1.209">
+  <component name="RunManager" selected="Application.Job">
     <configuration name="192.168.1.209" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -375,14 +384,14 @@
       <module name="LDA" />
       <envs />
     </configuration>
-    <configuration name="LDA" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="Job" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
           <option name="PATTERN" value="huyang.edu.cn.NLP.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="MAIN_CLASS_NAME" value="huyang.edu.cn.LDA" />
+      <option name="MAIN_CLASS_NAME" value="huyang.edu.cn.Job" />
       <option name="VM_PARAMETERS" value="" />
       <option name="PROGRAM_PARAMETERS" value="" />
       <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
@@ -478,11 +487,11 @@
     <list size="3">
       <item index="0" class="java.lang.String" itemvalue="Remote.192.168.1.209" />
       <item index="1" class="java.lang.String" itemvalue="Application.CoreNLPSegment" />
-      <item index="2" class="java.lang.String" itemvalue="Application.LDA" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Job" />
     </list>
     <recent_temporary>
       <list size="2">
-        <item index="0" class="java.lang.String" itemvalue="Application.LDA" />
+        <item index="0" class="java.lang.String" itemvalue="Application.Job" />
         <item index="1" class="java.lang.String" itemvalue="Application.CoreNLPSegment" />
       </list>
     </recent_temporary>
@@ -524,18 +533,30 @@
       <workItem from="1512645005533" duration="50000" />
       <workItem from="1512655219825" duration="701000" />
       <workItem from="1512690337216" duration="5582000" />
+      <workItem from="1512700295433" duration="1868000" />
+      <workItem from="1512782950858" duration="41000" />
+      <workItem from="1513310546965" duration="755000" />
+      <workItem from="1513313946128" duration="2318000" />
+      <workItem from="1513317093497" duration="166000" />
+      <workItem from="1513471643862" duration="138000" />
+      <workItem from="1513488928554" duration="711000" />
+      <workItem from="1513575695107" duration="359000" />
+      <workItem from="1513855907869" duration="51000" />
+      <workItem from="1513991715430" duration="566000" />
+      <workItem from="1513992521101" duration="603000" />
+      <workItem from="1513993142176" duration="12586000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="114192000" />
+    <option name="totallyTimeSpent" value="134354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.6082589" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.18303572" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -543,11 +564,11 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24330357" sideWeight="0.5021322" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.55133927" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.19308035" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.51004463" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.08147322" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4107143" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16204691" sideWeight="0.4955357" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26226014" sideWeight="0.4955357" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27901787" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -555,7 +576,8 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26012793" sideWeight="0.50446427" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.37388393" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35044643" sideWeight="0.4978678" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Data View" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -605,58 +627,66 @@
           <option name="timeStamp" value="42" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java</url>
-          <line>82</line>
-          <properties />
-          <option name="timeStamp" value="43" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/LDADriver.java</url>
-          <line>64</line>
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/LDADriver.java</url>
+          <line>63</line>
           <properties />
           <option name="timeStamp" value="107" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java</url>
-          <line>179</line>
-          <properties />
-          <option name="timeStamp" value="114" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java</url>
-          <line>44</line>
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitMapper.java</url>
+          <line>43</line>
           <properties />
           <option name="timeStamp" value="127" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java</url>
-          <line>172</line>
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputReducer.java</url>
+          <line>56</line>
           <properties />
-          <option name="timeStamp" value="130" />
+          <option name="timeStamp" value="147" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java</url>
-          <line>73</line>
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputReducer.java</url>
+          <line>64</line>
           <properties />
-          <option name="timeStamp" value="134" />
+          <option name="timeStamp" value="148" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitReducer.java</url>
-          <line>58</line>
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitReducer.java</url>
+          <line>34</line>
           <properties />
-          <option name="timeStamp" value="140" />
+          <option name="timeStamp" value="150" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitReducer.java</url>
+          <line>69</line>
+          <properties />
+          <option name="timeStamp" value="152" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/LDAMapper.java</url>
+          <line>49</line>
+          <properties />
+          <option name="timeStamp" value="153" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/LDAMapper.java</url>
+          <line>104</line>
+          <properties />
+          <option name="timeStamp" value="158" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java</url>
+          <line>98</line>
+          <properties />
+          <option name="timeStamp" value="162" />
         </line-breakpoint>
       </breakpoints>
       <breakpoints-dialog>
         <breakpoints-dialog />
       </breakpoints-dialog>
-      <option name="time" value="147" />
+      <option name="time" value="163" />
     </breakpoint-manager>
     <watches-manager>
-      <configuration name="Remote">
-        <watch expression="k" language="JAVA" />
-        <watch expression="MatrixOperations.sumByRow(topicToWord)" language="JAVA" custom="huyang.edu.cn.Utils.MatrixOperations" />
-      </configuration>
       <configuration name="Application">
         <watch expression="topic_word_count" language="JAVA" />
         <watch expression="MatrixOperations.sumByRow(topic_word_count)" language="JAVA" />
@@ -664,42 +694,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Word.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="80" column="21" lean-forward="false" selection-start-line="80" selection-start-column="21" selection-end-line="80" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.4.1/hadoop-mapreduce-client-core-2.4.1.jar!/org/apache/hadoop/mapreduce/lib/input/LineRecordReader.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="507">
-          <caret line="85" column="57" lean-forward="false" selection-start-line="85" selection-start-column="53" selection-end-line="85" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.4.1/hadoop-mapreduce-client-core-2.4.1.jar!/org/apache/hadoop/mapreduce/lib/input/TextInputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="34" column="29" lean-forward="false" selection-start-line="34" selection-start-column="29" selection-end-line="34" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://D:/maven/repository/org/apache/hadoop/hadoop-mapreduce-client-core/2.4.1/hadoop-mapreduce-client-core-2.4.1.jar!/org/apache/hadoop/mapreduce/InputFormat.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="14" column="22" lean-forward="false" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://D:/maven/repository/org/apache/hadoop/hadoop-common/2.4.1/hadoop-common-2.4.1.jar!/org/apache/hadoop/io/SequenceFile.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -711,53 +705,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-216">
           <caret line="22" column="30" lean-forward="true" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/train.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-270494">
-          <caret line="24" column="156" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="190" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/MapWritable.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/Pair.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="567">
-          <caret line="41" column="37" lean-forward="false" selection-start-line="41" selection-start-column="37" selection-end-line="41" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-297">
-          <caret line="38" column="19" lean-forward="false" selection-start-line="38" selection-start-column="19" selection-end-line="38" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="54" column="42" lean-forward="true" selection-start-line="54" selection-start-column="42" selection-end-line="54" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Matrix.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="46" lean-forward="true" selection-start-line="6" selection-start-column="46" selection-end-line="6" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Vector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="9" column="0" lean-forward="true" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/Pair.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterator.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/sequence/SequenceFileIterable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/TwordsComparable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -795,31 +749,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/textCorpusWritable.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/paramMatrix.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/indexToWordWritable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="8" column="14" lean-forward="false" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_92/src.zip!/java/lang/Enum.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="214">
           <caret line="129" column="18" lean-forward="false" selection-start-line="129" selection-start-column="18" selection-end-line="129" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/MatrixKind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
         </state>
       </provider>
     </entry>
@@ -858,76 +791,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Param.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="6" column="30" lean-forward="false" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/job/AbstractJob.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="563">
           <caret line="48" column="29" lean-forward="false" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="29" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="imports" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAReducer.java" />
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="0">
-            <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
-            <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/indexToCountWritable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="233">
-          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/CalParamsMapper.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
           <caret line="11" column="108" lean-forward="false" selection-start-line="11" selection-start-column="108" selection-end-line="11" selection-end-column="108" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/CalParamDriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="27" column="89" lean-forward="false" selection-start-line="27" selection-start-column="83" selection-end-line="27" selection-end-column="89" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/CalParamsReducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/CalParamsReducer.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="514">
           <caret line="78" column="9" lean-forward="true" selection-start-line="78" selection-start-column="9" selection-end-line="78" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/LDADriver.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="47" column="35" lean-forward="true" selection-start-line="47" selection-start-column="35" selection-end-line="47" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -935,106 +820,239 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="37" column="42" lean-forward="false" selection-start-line="37" selection-start-column="34" selection-end-line="37" selection-end-column="42" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Model.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="643">
-          <caret line="172" column="0" lean-forward="false" selection-start-line="172" selection-start-column="0" selection-end-line="172" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/data/twoDimensionIndexWritable.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/twoDimensionIndexWritable.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="353">
           <caret line="100" column="93" lean-forward="true" selection-start-line="100" selection-start-column="93" selection-end-line="100" selection-end-column="93" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="43" column="51" lean-forward="false" selection-start-line="43" selection-start-column="46" selection-end-line="43" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InputReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1728">
+          <caret line="64" column="0" lean-forward="false" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitReducer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="972">
+          <caret line="50" column="57" lean-forward="false" selection-start-line="50" selection-start-column="57" selection-end-line="50" selection-end-column="57" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitReducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/InitMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+        <state relative-caret-position="837">
+          <caret line="48" column="52" lean-forward="false" selection-start-line="48" selection-start-column="49" selection-end-line="48" selection-end-column="52" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InitDriver.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/iterations/LDAMapper.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="33" column="37" lean-forward="false" selection-start-line="33" selection-start-column="37" selection-end-line="33" selection-end-column="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/LDA.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="269">
-          <caret line="145" column="27" lean-forward="false" selection-start-line="145" selection-start-column="27" selection-end-line="145" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#979#996#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputMapper.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="307">
-          <caret line="30" column="65" lean-forward="true" selection-start-line="30" selection-start-column="65" selection-end-line="30" selection-end-column="65" />
+        <state relative-caret-position="999">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/InputDriver.java">
+    <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="317">
-          <caret line="34" column="37" lean-forward="false" selection-start-line="34" selection-start-column="37" selection-end-line="34" selection-end-column="37" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/train.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-54">
+          <caret line="24" column="156" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="190" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pyspark/LDA.ipynb">
+      <provider selected="true" editor-type-id="ipnb-editor">
+        <state>
+          <selected id="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToCountWritable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InputReducer.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/MatrixKind.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="344">
-          <caret line="48" column="13" lean-forward="false" selection-start-line="48" selection-start-column="13" selection-end-line="48" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="5" column="49" lean-forward="false" selection-start-line="5" selection-start-column="49" selection-end-line="5" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/InitMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToWordWritable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="73" column="0" lean-forward="false" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+        <state relative-caret-position="378">
+          <caret line="23" column="11" lean-forward="false" selection-start-line="23" selection-start-column="11" selection-end-line="23" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/CalParamDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="189">
+          <caret line="23" column="13" lean-forward="false" selection-start-line="23" selection-start-column="13" selection-end-line="23" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InputDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="19" column="13" lean-forward="false" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/InitDriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="18" column="13" lean-forward="false" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="459">
+            <caret line="17" column="19" lean-forward="false" selection-start-line="17" selection-start-column="10" selection-end-line="17" selection-end-column="19" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Vector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="10" column="9" lean-forward="false" selection-start-line="10" selection-start-column="9" selection-end-line="10" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/result.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="8" column="53" lean-forward="false" selection-start-line="8" selection-start-column="44" selection-end-line="8" selection-end-column="53" />
+        <state relative-caret-position="108">
+          <caret line="4" column="598" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="8" selection-end-column="656" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/iterations/LDAMapper.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="83" column="104" lean-forward="true" selection-start-line="83" selection-start-column="104" selection-end-line="83" selection-end-column="104" />
+        <state relative-caret-position="603">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Param.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding>
+            <element signature="e#509#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="168">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding>
+            <element signature="e#607#608#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/reuslt.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="1" column="79" lean-forward="false" selection-start-line="1" selection-start-column="62" selection-end-line="1" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="74" column="36" lean-forward="true" selection-start-line="74" selection-start-column="36" selection-end-line="74" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2875#2884#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/Model.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2493">
+          <caret line="121" column="35" lean-forward="false" selection-start-line="121" selection-start-column="31" selection-end-line="121" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3367#3376#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="93" column="60" lean-forward="false" selection-start-line="93" selection-start-column="58" selection-end-line="93" selection-end-column="60" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2944#2953#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/driver/LDADriver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="21" column="13" lean-forward="false" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/Job.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="373">
+          <caret line="128" column="9" lean-forward="true" selection-start-line="128" selection-start-column="9" selection-end-line="128" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1096,7 +1114,6 @@
             <option name="proportions">
               <list>
                 <option value="0.2" />
-                <option value="0.6" />
               </list>
             </option>
           </splitter-proportions>

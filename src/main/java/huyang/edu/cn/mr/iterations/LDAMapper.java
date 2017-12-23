@@ -1,9 +1,9 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.LDA;
+import huyang.edu.cn.Job;
 import huyang.edu.cn.Utils.MatrixOperations;
-import huyang.edu.cn.data.MatrixKind;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.mr.data.MatrixKind;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import huyang.edu.cn.vector.Matrix;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
@@ -46,11 +46,11 @@ public class LDAMapper extends Mapper<twoDimensionIndexWritable, Text, twoDimens
         this.K = Integer.parseInt(conf.get("K"));
         this.alpha = Double.parseDouble(conf.get("alpha"));
         this.beta = Double.parseDouble(conf.get("beta"));
-        ReadIndexFromFile(new Path(conf.get(LDA.indexFile)), conf);
+        ReadIndexFromFile(new Path(conf.get(Job.indexFile)), conf);
         docToTopic = new Matrix<>(M, K, 0);
-        ReadMatirxFromFile(new Path(conf.get(LDA.docToTopic)), conf, docToTopic, M,K);
+        ReadMatirxFromFile(new Path(conf.get(Job.docToTopic)), conf, docToTopic, M,K);
         topicToWord = new Matrix<>(K, V, 0);
-        ReadMatirxFromFile(new Path(conf.get(LDA.topicToWords)), conf, topicToWord, K,V);
+        ReadMatirxFromFile(new Path(conf.get(Job.topicToWords)), conf, topicToWord, K,V);
     }
 
     @Override

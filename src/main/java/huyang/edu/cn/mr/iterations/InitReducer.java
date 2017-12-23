@@ -1,9 +1,9 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
 import huyang.edu.cn.HadoopUtil;
-import huyang.edu.cn.LDA;
-import huyang.edu.cn.data.MatrixKind;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.Job;
+import huyang.edu.cn.mr.data.MatrixKind;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -14,7 +14,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 import java.io.IOException;
-import java.util.Iterator;
 
 public class InitReducer extends Reducer<twoDimensionIndexWritable, Text, twoDimensionIndexWritable, Text> {
     private static final Logger log = LoggerFactory.getLogger(InitReducer.class);
@@ -30,14 +29,14 @@ public class InitReducer extends Reducer<twoDimensionIndexWritable, Text, twoDim
     @Override
     protected void setup(Context context) throws IOException, InterruptedException {
         super.setup(context);
-        this.docToTopicPath = new Path(context.getConfiguration().get(LDA.docToTopic));
-        this.topicToWordsPath = new Path(context.getConfiguration().get(LDA.topicToWords));
+        this.docToTopicPath = new Path(context.getConfiguration().get(Job.docToTopic));
+        this.topicToWordsPath = new Path(context.getConfiguration().get(Job.topicToWords));
 
         HadoopUtil.delete(context.getConfiguration(), docToTopicPath);
         HadoopUtil.delete(context.getConfiguration(), topicToWordsPath);
 
-        this.docToTopicPath = new Path(context.getConfiguration().get(LDA.docToTopic));
-        this.topicToWordsPath = new Path(context.getConfiguration().get(LDA.topicToWords));
+        this.docToTopicPath = new Path(context.getConfiguration().get(Job.docToTopic));
+        this.topicToWordsPath = new Path(context.getConfiguration().get(Job.topicToWords));
 
         FileSystem fs = FileSystem.get(docToTopicPath.toUri(),context.getConfiguration());
         writer1 = new SequenceFile.Writer(fs, context.getConfiguration(), docToTopicPath, twoDimensionIndexWritable.class, IntWritable.class);

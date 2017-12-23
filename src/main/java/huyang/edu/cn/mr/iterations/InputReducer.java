@@ -1,8 +1,8 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.LDA;
-import huyang.edu.cn.data.indexToWordWritable;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.Job;
+import huyang.edu.cn.mr.data.indexToWordWritable;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
@@ -31,7 +31,7 @@ public class InputReducer extends Reducer<LongWritable, indexToWordWritable, two
         super.setup(context);
         this.wordToIndex = new HashMap<String, Integer>();
         this.m = 0;
-        this.indexFilePath = new Path(context.getConfiguration().get(LDA.indexFile));
+        this.indexFilePath = new Path(context.getConfiguration().get(Job.indexFile));
     }
 
     @Override

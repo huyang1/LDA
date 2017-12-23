@@ -1,7 +1,7 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.data.indexToCountWritable;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.mr.data.indexToCountWritable;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.slf4j.Logger;

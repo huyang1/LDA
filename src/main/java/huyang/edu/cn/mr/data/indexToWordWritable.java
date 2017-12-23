@@ -1,4 +1,4 @@
-package huyang.edu.cn.data;
+package huyang.edu.cn.mr.data;
 
 import org.apache.hadoop.conf.Configured;
 import org.apache.hadoop.io.Writable;
@@ -7,23 +7,23 @@ import java.io.DataInput;
 import java.io.DataOutput;
 import java.io.IOException;
 
-public class indexToCountWritable extends Configured implements Writable {
+public class indexToWordWritable extends Configured implements Writable{
 
     private int index;
 
-    private int count;
+    private String word;
 
-    public indexToCountWritable() {
+    public indexToWordWritable() {
         this.index = Integer.MAX_VALUE;
     }
 
-    public indexToCountWritable(int index) {
+    public indexToWordWritable(int index) {
         this.index = index;
     }
 
-    public indexToCountWritable(int index, int count) {
+    public indexToWordWritable(int index, String word) {
         this.index = index;
-        this.count = count;
+        this.word = word;
     }
 
     public int getIndex() {
@@ -34,22 +34,21 @@ public class indexToCountWritable extends Configured implements Writable {
         this.index = index;
     }
 
-    public int getCount() {
-        return count;
+    public String getWord() {
+        return word;
     }
 
-    public void setCount(int count) {
-        this.count = count;
+    public void setWord(String word) {
+        this.word = word;
     }
 
     public void write(DataOutput dataOutput) throws IOException {
         dataOutput.writeInt(index);
-        dataOutput.writeInt(count);
+        dataOutput.writeUTF(word);
     }
 
     public void readFields(DataInput dataInput) throws IOException {
         this.index = dataInput.readInt();
-        this.count = dataInput.readInt();
+        this.word = dataInput.readUTF();
     }
 }
-

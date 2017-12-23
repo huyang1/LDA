@@ -1,16 +1,15 @@
-package huyang.edu.cn.mr;
+package huyang.edu.cn.mr.driver;
 
-import huyang.edu.cn.LDA;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
-import huyang.edu.cn.iterations.InitReducer;
-import huyang.edu.cn.iterations.LDAMapper;
+import huyang.edu.cn.Job;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
+import huyang.edu.cn.mr.iterations.InitReducer;
+import huyang.edu.cn.mr.iterations.LDAMapper;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.FileStatus;
 import org.apache.hadoop.fs.FileSystem;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.fs.PathFilter;
 import org.apache.hadoop.io.Text;
-import org.apache.hadoop.mapreduce.Job;
 import org.apache.hadoop.mapreduce.lib.input.FileInputFormat;
 import org.apache.hadoop.mapreduce.lib.input.SequenceFileInputFormat;
 import org.apache.hadoop.mapreduce.lib.output.FileOutputFormat;
@@ -29,14 +28,14 @@ public class LDADriver {
         while(iteration < maxIterations) {
             String jobName = "Gibbs sample running iteration:"+iteration;
 
-            conf.set(LDA.indexFile, indexFilePath.toString());
-            conf.set(LDA.docToTopic, docToTopicPath.toString());
-            conf.set(LDA.topicToWords, topicToWordsPath.toString());
+            conf.set(Job.indexFile, indexFilePath.toString());
+            conf.set(Job.docToTopic, docToTopicPath.toString());
+            conf.set(Job.topicToWords, topicToWordsPath.toString());
             conf.set("K", String.valueOf(K));
             conf.set("alpha", String.valueOf(50d/K));
             conf.set("beta", String.valueOf(0.01));
 
-            Job job = new Job(conf, jobName);
+            org.apache.hadoop.mapreduce.Job job = new org.apache.hadoop.mapreduce.Job(conf, jobName);
             job.setMapOutputKeyClass(twoDimensionIndexWritable.class);
             job.setMapOutputValueClass(Text.class);
             job.setOutputKeyClass(twoDimensionIndexWritable.class);

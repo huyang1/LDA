@@ -1,15 +1,14 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.LDA;
-import huyang.edu.cn.data.MatrixKind;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
+import huyang.edu.cn.Job;
+import huyang.edu.cn.mr.data.MatrixKind;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
 import huyang.edu.cn.sequence.Pair;
 import huyang.edu.cn.sequence.SequenceFileIterable;
 import huyang.edu.cn.vector.Matrix;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
-import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 import org.slf4j.Logger;
@@ -40,7 +39,7 @@ public class InitMapper extends Mapper<twoDimensionIndexWritable, Text, twoDimen
         super.setup(context);
         Configuration conf = context.getConfiguration();
         this.K = Integer.parseInt(conf.get("K"));
-        ReadIndexFromFile(new Path(conf.get(LDA.indexFile)), conf);
+        ReadIndexFromFile(new Path(conf.get(Job.indexFile)), conf);
         docToTopic = new Matrix<Integer>(M, K, 0);
         topicToWord = new Matrix<Integer>(K, V, 0);
     }

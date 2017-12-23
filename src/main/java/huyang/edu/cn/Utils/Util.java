@@ -18,4 +18,24 @@ public class Util<K,V> {
         }
         return null;
     }
+
+    /**
+     * 概率抽样
+     * @param p 概率密度数组
+     * @return
+     */
+    public static int sample(double[] p) {
+
+        int topic;
+        for (int k = 1; k < p.length; ++k) {
+            p[k] += p[k-1];
+        }
+
+        double u = Math.random() * p[p.length-1];
+        for (topic = 0; topic < p.length; topic++) {
+            if (u < p[topic])
+                break;
+        }
+        return topic;
+    }
 }

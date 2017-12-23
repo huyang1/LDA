@@ -1,7 +1,6 @@
-package huyang.edu.cn.iterations;
+package huyang.edu.cn.mr.iterations;
 
-import huyang.edu.cn.data.indexToWordWritable;
-import org.apache.hadoop.io.IntWritable;
+import huyang.edu.cn.mr.data.indexToWordWritable;
 import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;

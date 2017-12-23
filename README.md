@@ -10,7 +10,7 @@ HEAD  毕业设计：LDA算法实现与运用<br>
        输出：更新topicword， doctopic，文件，新生成M*N word file 存于（output/iteration/iteration-？）路径供下次迭代使用。
 #### 4>.
        saveModel，MR---只计算phi输出
-###### 若有需要：对所有的saveModel的参数的平均值，使model更精确。（model存于output/model/model-？）<br>
+###### 若有需要：对所有的saveModel的参数的平均值，使model更精确。（model存于output/LDAModel/LDAModel-？）<br>
 ###### （？代表当前迭代次数。）<br>
           
 ### 使用参数：
@@ -18,7 +18,7 @@ HEAD  毕业设计：LDA算法实现与运用<br>
     -i    inputFile                     train file input path.  default: the project's train.txt
 	-o    outputFile                    output Dir path. default: the project's result.txt
 	-k    K                             topic number,default: topic default 8
-	-b    beginSaveIterations           start save model params iterations
-	-s    saveStepNum                   save model params num. 
+	-b    beginSaveIterations           start save LDAModel params iterations
+	-s    saveStepNum                   save LDAModel params num. 
 	-it   maxIterations                 LDA max iterations.
 	-mr   runMR                         if use MapReducer.

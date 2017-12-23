@@ -1,4 +1,4 @@
-package huyang.edu.cn.data;
+package huyang.edu.cn.mr.data;
 
 public class MatrixKind {
     public static final String DocTopic = "DocTopic";

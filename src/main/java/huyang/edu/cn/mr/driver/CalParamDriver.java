@@ -1,9 +1,9 @@
-package huyang.edu.cn.mr;
+package huyang.edu.cn.mr.driver;
 
-import huyang.edu.cn.data.indexToCountWritable;
-import huyang.edu.cn.data.twoDimensionIndexWritable;
-import huyang.edu.cn.iterations.CalParamsMapper;
-import huyang.edu.cn.iterations.CalParamsReducer;
+import huyang.edu.cn.mr.data.indexToCountWritable;
+import huyang.edu.cn.mr.data.twoDimensionIndexWritable;
+import huyang.edu.cn.mr.iterations.CalParamsMapper;
+import huyang.edu.cn.mr.iterations.CalParamsReducer;
 import org.apache.hadoop.conf.Configuration;
 import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;

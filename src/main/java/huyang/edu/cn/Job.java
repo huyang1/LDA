@@ -1,9 +1,11 @@
 package huyang.edu.cn;
 
 import huyang.edu.cn.job.AbstractJob;
-import huyang.edu.cn.mr.InitDriver;
-import huyang.edu.cn.mr.InputDriver;
-import huyang.edu.cn.mr.LDADriver;
+import huyang.edu.cn.model.BTModel;
+import huyang.edu.cn.model.LDAModel;
+import huyang.edu.cn.mr.driver.InitDriver;
+import huyang.edu.cn.mr.driver.InputDriver;
+import huyang.edu.cn.mr.driver.LDADriver;
 import huyang.edu.cn.vector.Matrix;
 import huyang.edu.cn.vector.Param;
 import org.apache.hadoop.conf.Configuration;
@@ -19,7 +21,7 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-public class LDA extends AbstractJob{
+public class Job extends AbstractJob{
 
     public static final String SPLIT = " ";
 
@@ -40,7 +42,7 @@ public class LDA extends AbstractJob{
      */
     private static Matrix matrix;
 
-    public LDA() {
+    public Job() {
         this.matrix = new Matrix<Integer>();
     }
 
@@ -75,7 +77,7 @@ public class LDA extends AbstractJob{
         addOption("K","k","topic number,default: " + "topic default 8");
         addOption("beginSaveIterations","b","start save model params iterations");
         addOption("saveStepNum","s"," save model params num. tip: beginSaveIterations+saveStepNum must < maxIterations");
-        addOption("maxIterations","it","LDA max iterations, default is 500");
+        addOption("maxIterations","it","Job max iterations, default is 500");
         addOption("runMR","mr","if run map reducer.");
         Path inputPath;
         Path outputPath;
@@ -128,8 +130,8 @@ public class LDA extends AbstractJob{
 
         if(!runMR) {
             loadDocumentsFromFile(inputPath.toString());
-            Model model = new Model(wordToIndex,matrix,outputPath.toString(),K,beginSave,saveNum,iterations);
-            model.trainModel(matrix);
+            LDAModel LDAModel = new LDAModel(wordToIndex,matrix,outputPath.toString(),K,beginSave,saveNum,iterations);
+            LDAModel.trainModel();
         } else {
             inputPath = new Path("LdaInput");
             outputPath = new Path("LdaOutput");
@@ -192,8 +194,10 @@ public class LDA extends AbstractJob{
             run(args);
         } else {
             loadDocumentsFromFile("train.txt");
-            Model model = new Model(wordToIndex,matrix);
-            model.trainModel(matrix);
+            LDAModel LDAModel = new LDAModel(wordToIndex,matrix);
+            LDAModel.trainModel();
+            BTModel btModel = new BTModel(wordToIndex,matrix);
+            btModel.trainModel();
         }
     }
 
