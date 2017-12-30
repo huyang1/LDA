@@ -15,7 +15,7 @@
  * limitations under the License.
  */
 
-package huyang.edu.cn.sequence;
+package huyang.edu.cn.mr.sequence;
 
 import com.google.common.collect.AbstractIterator;
 import com.google.common.io.Closeables;

@@ -13,8 +13,7 @@ import org.apache.hadoop.fs.Path;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Reducer;
-import huyang.edu.cn.sequence.Pair;
-import huyang.edu.cn.sequence.SequenceFileIterable;
+import huyang.edu.cn.mr.sequence.*;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
