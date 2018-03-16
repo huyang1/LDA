@@ -79,7 +79,7 @@ public class LDAModel extends Model{
      * @param matrix M*N
      */
     public LDAModel(Map<String, Integer> wordToIndex, Matrix matrix) {
-        super(8,100, 99, 1,"reuslt.txt",10, wordToIndex, matrix);
+        super(8,100, 99, 1,"LDA/reuslt.txt",10, wordToIndex, matrix);
         this.alpha = 50f/this.K;
         this.beta = 0.01f;
 

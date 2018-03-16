@@ -59,7 +59,7 @@ public class BTModel extends Model {
     private Matrix<Double> phi;
 
     public BTModel(Map<String, Integer> wordToIndex, Matrix matrix) {
-        super(8,100, 99, 1,"reuslt.txt",10, wordToIndex, matrix);
+        super(8,100, 99, 1,"BTM/reuslt.txt",10, wordToIndex, matrix);
         this.V = wordToIndex.size();
         this.alpha = new Param<Double>(8,50d/8);
         this.beta = new Matrix<Double>(8, this.V, 0.01);
