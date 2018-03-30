@@ -4,17 +4,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/huyang/edu/cn/mr/data/indexToCountWritable.java" line="46" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d17b483e-a05a-4097-b885-f8f78809a6a3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Word.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/Utils/Util.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/BTModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/LDAModel.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/Model.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/model/Model.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Matrix.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Matrix.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Param.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Param.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Vector.java" afterPath="$PROJECT_DIR$/src/main/java/huyang/edu/cn/vector/Vector.java" />
-    </list>
+    <list default="true" id="d17b483e-a05a-4097-b885-f8f78809a6a3" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -584,12 +574,12 @@
       <workItem from="1522302081979" duration="4397000" />
       <workItem from="1522373693216" duration="715000" />
       <workItem from="1522376129904" duration="3088000" />
-      <workItem from="1522391615835" duration="5449000" />
+      <workItem from="1522391615835" duration="5657000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="177683000" />
+    <option name="totallyTimeSpent" value="177891000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
