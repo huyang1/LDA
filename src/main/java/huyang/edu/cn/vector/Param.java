@@ -2,7 +2,7 @@ package huyang.edu.cn.vector;
 
 import java.util.ArrayList;
 
-public class Param<T> implements Vector<T> {
+public class Param< T > implements Vector<T> {
 
     private ArrayList<T> data;
 
@@ -18,6 +18,19 @@ public class Param<T> implements Vector<T> {
         this.data = new ArrayList<T>();
         for(int i=0; i<size; i++) {
             this.add(value);
+        }
+    }
+
+    public boolean equal(Param<T> x) {
+        if(this.getSize() != x.getSize()) {
+            return false;
+        } else {
+            for(int i =  0; i < this.getSize(); i++) {
+                if(!x.getData().contains(getValue(i))) {
+                    return false;
+                }
+            }
+            return true;
         }
     }
 
@@ -42,9 +55,10 @@ public class Param<T> implements Vector<T> {
         return this.data;
     }
 
-    public Vector like() {
-        Param param = new Param(this.getData());
+    public Param like() {
+        Param param = new Param(new ArrayList<T>());
         return param;
     }
+
 
 }

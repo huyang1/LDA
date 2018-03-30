@@ -79,9 +79,10 @@ public class LDAModel extends Model{
      * @param matrix M*N
      */
     public LDAModel(Map<String, Integer> wordToIndex, Matrix matrix) {
-        super(8,100, 99, 1,"reuslt.txt",10, wordToIndex, matrix);
+        super(8,100, 99, 1,"LDA/reuslt.txt",10, wordToIndex, matrix);
         this.alpha = 50f/this.K;
         this.beta = 0.01f;
+        initModel();
 
     }
 
@@ -94,6 +95,7 @@ public class LDAModel extends Model{
         super(K,iterations, beginSave, saveNum,outputPath,10, wordToIndex, matrix);
         this.alpha = 50f/this.K;
         this.beta = 0.01f;
+        initModel();
     }
 
     @Override
@@ -135,7 +137,6 @@ public class LDAModel extends Model{
 
     @Override
     public void trainModel() {
-        initModel();
         for(int i = 0; i < iterations; i++) {
             log.info("iterationNum is "+i);
             System.out.println("iterationNum is "+i);
@@ -225,6 +226,16 @@ public class LDAModel extends Model{
         //对应文档的单词计数
         m_topic_count_sum.setValue(m,m_topic_count_sum.getValue(m)+1);
         return newTopic;
+    }
+
+    @Override
+    public Matrix<Double> getPhi() {
+        return this.phi;
+    }
+
+    @Override
+    public Vector getTheta() {
+        return this.theta;
     }
 
 }

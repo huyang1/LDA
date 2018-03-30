@@ -1,5 +1,7 @@
 package huyang.edu.cn.vector;
 
+import java.util.ArrayList;
+
 public interface Vector<T> {
 
     T getValue(int index);
@@ -10,6 +12,5 @@ public interface Vector<T> {
 
     void add(T value);
 
-    Vector like();
-
+    Vector<T> like();
 }

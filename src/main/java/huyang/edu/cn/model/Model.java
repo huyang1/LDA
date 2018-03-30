@@ -126,4 +126,8 @@ public abstract class Model {
         }
         writer.close();
     }
+
+    abstract public Matrix getPhi();
+
+    abstract public Vector getTheta();
 }

@@ -1,5 +1,7 @@
 package huyang.edu.cn.vector;
 
+import java.util.ArrayList;
+
 public class Matrix<T> implements Vector<Vector<T>> {
 
     private Vector<Vector<T>> matrix;
@@ -39,8 +41,42 @@ public class Matrix<T> implements Vector<Vector<T>> {
         this.matrix.getValue(m).add(value);
     }
 
-    public Vector like() {
+    public Matrix like() {
         return new Matrix();
+    }
+
+    /**
+     * 数据集分块
+     * @param length ： 块大小
+     * @return
+     */
+    public ArrayList<Vector> Block(int length) {
+        ArrayList<Vector> blocks = new ArrayList<Vector>();
+        for(int i = 0; i < getSize()/length; i++) {
+            Vector block = like();
+            for(int j = i*length; j < length*(i+1); j++) {
+                block.add(getValue(j));
+            }
+            blocks.add(block);
+        }
+        if(getSize()%length !=0) {
+            Vector block = like();
+            for(int i = length*(getSize()/length); i < getSize(); i++) {
+                block.add(getValue(i));
+            }
+            blocks.add(block);
+        }
+        return blocks;
+    }
+
+    public int count(Param<T> x) {
+        int count = 0;
+        for(int i = 0; i < this.getSize(); i++) {
+            if(((Param) this.getValue(i)).equals(x)) {
+                count++;
+            }
+        }
+        return count;
     }
 
 }

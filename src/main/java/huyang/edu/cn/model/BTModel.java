@@ -9,6 +9,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import sun.nio.cs.ext.MacRoman;
 
+import java.util.ArrayList;
 import java.util.Map;
 
 public class BTModel extends Model {
@@ -19,6 +20,8 @@ public class BTModel extends Model {
      * B*2词对
      */
     private Matrix<Integer> biterms;
+
+    private ArrayList<Matrix<Integer>> docBiterms;
 
     /**
      * z is topic label B
@@ -58,13 +61,17 @@ public class BTModel extends Model {
 
     private Matrix<Double> phi;
 
+    private Vector<Double> theta;
+
     public BTModel(Map<String, Integer> wordToIndex, Matrix matrix) {
-        super(8,100, 99, 1,"reuslt.txt",10, wordToIndex, matrix);
+        super(8,100, 99, 1,"BTM/reuslt.txt",10, wordToIndex, matrix);
         this.V = wordToIndex.size();
         this.alpha = new Param<Double>(8,50d/8);
         this.beta = new Matrix<Double>(8, this.V, 0.01);
         this.beta_topic_sum = new Param<Double>(K,this.V*0.01);
         this.phi = new Matrix<Double>(K, V, 0d);
+        this.theta = new Param<Double>(K,.0);
+        initModel();
     }
 
     public BTModel(Map<String, Integer> wordToIndex, Matrix matrix,
@@ -79,6 +86,8 @@ public class BTModel extends Model {
         this.beta = new Matrix<Double>(K, this.V, 0.01);
         this.beta_topic_sum = new Param<Double>(K,this.V*0.01);
         this.phi = new Matrix<Double>(K, V, 0d);
+        this.theta = new Param<Double>(K,.0);
+        initModel();
     }
 
     @Override
@@ -111,11 +120,11 @@ public class BTModel extends Model {
             }
         }
         this.B = biterms.getSize();
+        generateBiterms();
     }
 
     @Override
     public void trainModel() {
-        initModel();
         for(int i = 0; i < iterations; i++) {
             System.out.println("iteration in:"+i);
             if(i>=beginSave) {
@@ -143,6 +152,14 @@ public class BTModel extends Model {
                 phi.getValue(k).setValue(v, topic_word_count.getValue(k).getValue(v) /
                         (topic_word_count_sum.getValue(k) + beta_topic_sum.getValue(k)));
             }
+        }
+        //计算theta
+        double alphaSum = .0;
+        for(int i =0; i < alpha.getSize(); i++) {
+            alphaSum += alpha.getValue(i);
+        }
+        for(int k = 0; k < K; k++) {
+            theta.setValue(k, (topic_biterms.getValue(k)+alpha.getValue(k))/(B+alphaSum));
         }
 
     }
@@ -173,5 +190,100 @@ public class BTModel extends Model {
         topic_word_count_sum.setValue(newTopic, topic_word_count_sum.getValue(newTopic)+2);
 
         return newTopic;
+    }
+
+    public Vector<Double> predictionDoc(int doc) {
+        Matrix<Integer> docBiterm = this.docBiterms.get(doc);
+        Param<Double> topicPro = new Param<Double>();
+        for(int k = 0; k < K; k++) {
+            double pro = .0;
+            for(int j = 0; j < docBiterm.getSize(); j++) {
+                Param<Integer> biterm = (Param<Integer>) docBiterm.getValue(j);
+                int first = biterm.getValue(0);
+                int second = biterm.getValue(1);
+                double a = docBiterm.count(biterm)*1.0/docBiterm.getSize();
+                double b = .0;
+                for(int i = 0; i < K; i++) {
+
+                    b += this.theta.getValue(i)*this.phi.getValue(i).getValue(first)*this.phi.getValue(i).getValue(second);
+                }
+                pro += this.theta.getValue(k)*this.phi.getValue(k).getValue(first)*this.phi.getValue(k).getValue(second)
+                        / b * a;
+            }
+            topicPro.add(pro);
+        }
+        return topicPro;
+    }
+
+    public void generateBiterms() {
+        this.docBiterms = new ArrayList<>();
+        for(int i = 0; i < matrix.getSize(); i++) {
+            Matrix<Integer> docBiterm = new Matrix<>();
+            Vector<Integer> doc = matrix.getValue(i);
+            ArrayList<Integer> words = new ArrayList<>();
+            ArrayList<Integer> times = new ArrayList<>();
+            for(int j = 0; j < doc.getSize(); j++) {
+                int word = doc.getValue(j);
+                if(words.contains(word)) {
+                    times.set(words.indexOf(word),times.get(words.indexOf(word))+1);
+                } else {
+                    words.add(word);
+                    times.add(1);
+                }
+            }
+            for(int first : words.subList(0,words.size()-1)) {
+                for(int second : words.subList(words.indexOf(first)+1,words.size())) {
+                    Param<Integer> biterm = new Param<Integer>();
+                    biterm.add(first);
+                    biterm.add(second);
+                    int firstTimes = words.indexOf(first);
+                    int secondTimes = words.indexOf(second);
+                    if(firstTimes > secondTimes) {
+                        for(int time = 0; time < firstTimes; time++) {
+                            docBiterm.add(biterm);
+                        }
+                    } else {
+                        for(int time = 0; time < secondTimes; time++) {
+                            docBiterm.add(biterm);
+                        }
+                    }
+                }
+            }
+            this.docBiterms.add(docBiterm);
+        }
+    }
+
+    @Override
+    public Matrix<Double> getPhi() {
+        return this.phi;
+    }
+
+    @Override
+    public Vector<Double> getTheta() {
+        return this.theta;
+    }
+
+    public Vector<Integer> getTopic_biterms() {
+        return topic_biterms;
+    }
+
+    public Matrix<Integer> getTopic_word_count() {
+        return topic_word_count;
+    }
+
+    public void setAlpha(Vector<Double> alpha) {
+        this.alpha = alpha;
+    }
+
+    public void setBeta(Matrix<Double> beta) {
+        this.beta = beta;
+    }
+
+    public Vector<Double> getAlpha() {
+        return alpha;
+    }
+
+    public Matrix<Double> getBeta() {
+        return beta;
     }
 }
