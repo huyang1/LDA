@@ -91,6 +91,14 @@
             <artifactId>hadoop-yarn-common</artifactId>
             <version>${hadoop.version}</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/tw.edu.ntu.csie/libsvm -->
+        <dependency>
+            <groupId>tw.edu.ntu.csie</groupId>
+            <artifactId>libsvm</artifactId>
+            <version>3.17</version>
+        </dependency>
+
     </dependencies>
 
 
